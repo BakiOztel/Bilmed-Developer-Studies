@@ -1,0 +1,97 @@
+﻿body {
+    background: #559890;
+    background: linear-gradient(270deg, #559890, #766D9C);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+button {
+    background-color: #76ABAE;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin-right: 5px;
+    transition: background-color 0.5s ease;
+}
+    button:hover,
+    button:focus {
+        background-color: #76ABAE;
+    }
+
+.formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formContainer form .formInput,
+.formContainer form .formSubmit {
+    width: calc(100% - 40px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+#entityTable {
+  width: 90%;
+  margin: 20px auto;
+  background-color: white;
+    border-radius: 8px;
+    border-style: none;
+}
+
+#entityTable th, #entityTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#entityTable th {
+    background-color: #222831; 
+    color: white;
+}
+
+#entityTable tbody tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+#entityTable tbody tr:hover {
+  background-color: #ddd; 
+}
+
+.edit-input {
+    display: none;
+}
+
+.edit-buttons {
+    display: none;
+}
+
+.edit-mode .edit-input {
+    display: block;
+}
+
+.edit-mode .edit-buttons {
+    display: block;
+}

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Frontend</title>
+    <link rel="stylesheet"  href="css/frontend.css" />
+</head>
+<body>
+    <div class="formContainer">
+        <h2>Add New Consents</h2>
+        <form id="consentsForm">
+            <input class="formInput" type="text" id="type" name="type" placeholder="Type">
+
+            <input class="formInput" type="text" id="recipient" name="recipient" placeholder="Recipient">
+
+            <input class="formInput" type="text" id="status" name="status" placeholder="Status">
+
+            <input class="formInput" type="text" id="recipientType" name="recipientType" placeholder="Recipient Type">
+
+            <button class="formSubmit" type="submit">Save</button>
+        </form>
+    </div>
+    <table id="entityTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Recipient</th>
+                <th>RecipientType</th>
+                <th>Status</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="entityTableBody">
+        </tbody>
+    </table>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
