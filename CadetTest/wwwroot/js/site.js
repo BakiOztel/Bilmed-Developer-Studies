@@ -12,7 +12,7 @@ var token = "";
 var zaman = new Date();
 function VerileriTabloyaEkle(veri) {
 
-    
+
 
     veri.forEach(entity => { 
         var row = document.createElement('tr');
@@ -204,7 +204,7 @@ form.addEventListener("submit", function (event) {
     formData.forEach(function (value, key) {
         yeniKayit[key] = value;
     });
-
+    
     fetch("https://localhost:44338/api/Consents/CreateContents", {
         method: 'POST',
         headers: {
@@ -244,7 +244,7 @@ fetch("https://localhost:44338/api/User/authenticate", {
     })
     .then(async tokenData => {
         token = tokenData.jwtToken;
-        for (var i = 0; i <= 1000; i += 10) {
+        for (var i = 1; i < 1000; i += 10) {
              await fetch("https://localhost:44338/api/Consents", {
                 method: 'POST',
                 headers: {

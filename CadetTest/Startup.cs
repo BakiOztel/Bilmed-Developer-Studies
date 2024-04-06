@@ -70,7 +70,8 @@ namespace CadetTest
             services.AddSwaggerGen();
 
             //services.AddMvc();
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+            services.AddControllersWithViews();
 
         }
 
